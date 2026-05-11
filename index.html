@@ -952,7 +952,7 @@
           rgba(255, 90, 54, 0.08) 100%
         );
       }
-      .g-item.archive .invite {
+      .g-item .invite {
         position: absolute;
         left: 14px;
         right: 14px;
@@ -961,7 +961,7 @@
         color: #fff;
         text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
       }
-      .g-item.archive .invite .invite-meta {
+      .g-item .invite .invite-meta {
         display: flex;
         align-items: center;
         gap: 8px;
@@ -972,13 +972,26 @@
         color: rgba(255, 255, 255, 0.7);
         margin-bottom: 6px;
       }
-      .g-item.archive .invite .invite-meta::before {
+      .g-item .invite .invite-meta.is-ko {
+        font-family:
+          Pretendard,
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: none;
+        color: rgba(255, 255, 255, 0.85);
+        margin-bottom: 8px;
+      }
+      .g-item .invite .invite-meta::before {
         content: '';
         width: 18px;
         height: 1px;
         background: var(--yellow);
       }
-      .g-item.archive .invite strong {
+      .g-item .invite strong {
         font-family: Pretendard, sans-serif;
         font-size: 17px;
         font-weight: 800;
@@ -986,13 +999,13 @@
         display: block;
         margin-bottom: 6px;
       }
-      .g-item.archive .invite .invite-msg {
+      .g-item .invite .invite-msg {
         font-size: 12.5px;
         line-height: 1.55;
         color: rgba(255, 255, 255, 0.92);
         word-break: keep-all;
       }
-      .g-item.archive .invite .invite-msg em {
+      .g-item .invite .invite-msg em {
         font-style: normal;
         color: var(--yellow);
         font-weight: 700;
@@ -1602,13 +1615,33 @@
             콘텐츠의 아이디어를 구상하고 사용자 경험과 스토리를 설계합니다.
           </p>
           <ul class="curr-list">
-            <li><span class="box">1-2</span>콘텐츠 기획</li>
-            <li><span class="box">2-1</span>소셜 크리에이팅</li>
-            <li><span class="box">2-1</span>프로젝트 기획</li>
-            <li><span class="box">2-1</span>미디어 프로토타이핑</li>
-            <li><span class="box">2-1</span>프로젝트 프로포절</li>
-            <li><span class="box">2-1</span>데이터 시각화</li>
-            <li><span class="box">2-1</span>프로젝트 매니징</li>
+            <li>
+              <span class="box">1-2</span>콘텐츠 기획 (콘텐츠 발상, 구조 설계)
+            </li>
+            <li>
+              <span class="box">2-1</span>소셜 크리에이팅 (SNS 트렌드 분석, 채널
+              콘텐츠 기획)
+            </li>
+            <li>
+              <span class="box">2-1</span>프로젝트 기획 (사용자 리서치, 서비스
+              시나리오)
+            </li>
+            <li>
+              <span class="box">2-1</span>미디어 프로토타이핑 (UI 흐름 설계,
+              인터랙션 검증)
+            </li>
+            <li>
+              <span class="box">2-2</span>프로젝트 프로포절 (기획서 작성, 피칭
+              발표)
+            </li>
+            <li>
+              <span class="box">2-2</span>데이터 시각화 (데이터 해석,
+              인포그래픽)
+            </li>
+            <li>
+              <span class="box">2-2</span>프로젝트 매니징 (스케줄 관리, 팀
+              워크플로우)
+            </li>
           </ul>
           <p class="closing">
             단순히 예쁜 디자인보다 <em>“왜 이렇게 만들어야 하는가?”</em>를
@@ -1653,13 +1686,18 @@
           </div>
           <p class="sub">디자인을 실제로 움직이게 만드는 기술을 배웁니다.</p>
           <ul class="curr-list">
-            <li><span class="box">1-2</span>웹 퍼블리싱</li>
-            <li><span class="box">2-1</span>유니티 프로그래밍</li>
-            <li><span class="box">2-1</span></li>
-            <li><span class="box">2-1</span>미디어 프로그래밍</li>
+            <li><span class="box">1-2</span>웹 퍼블리싱 (HTML, CSS)</li>
+            <li><span class="box">2-1</span>유니티 프로그래밍 (C#)</li>
+            <li>
+              <span class="box">2-1</span>자바스크립트 프로그래밍 (JavaScript)
+            </li>
+            <li><span class="box">2-1</span>프론트앤드 개발 (React)</li>
             <!-- 내용 확인후 수정 -->
-            <li>피지컬 컴퓨팅 (체험형 인터랙션 프로그래밍)</li>
-            <li>실감형 콘텐츠 제작 (VR/AR)</li>
+            <li><span class="box">2-2</span>실감미디어 프로그래밍 (Unity)</li>
+            <li>
+              <span class="box">2-2</span>웹 인터렉션 프로그래밍 (JavaScript)
+            </li>
+            <li><span class="box">2-2</span>서버 프로그래밍 (Node.js)</li>
           </ul>
           <p class="closing">
             <em>“디자인을 구현할 줄 아는 개발자”</em>를 목표로 합니다.
@@ -1801,8 +1839,8 @@
         디미디가<br /><em>지나온 장면들</em>
       </h2>
       <p class="sec-lead reveal delay-2">
-        신입생OT, 멘토링, 연합피티, 졸업전시 — 매년 반복되지만 매번 새로운
-        장면들입니다. 2026년의 첫 페이지에 당신의 모습으로 채워집니다.
+        신입생OT, 멘토링, 연합 PT, 졸업 전시<br />
+        여러분들이 채워 나아갈 디미디의 순간들입니다.
       </p>
 
       <div class="gallery" id="galleryGrid">
@@ -2260,14 +2298,23 @@
           title: '학과생활 멘토링',
           subtitle: 'CAMPUS LIFE MENTORING',
           type: 'live',
+          thumb: 'img/학과생활멘토링.jpg',
           images: [],
         },
         {
           key: 'school-talk',
           title: '2026 어쩌다 학교!',
-          subtitle: '졸업선배 초청 토크쇼',
+          subtitle: 'Talk Show with Alumni',
+          //subtitleLang: 'ko',
           type: 'live',
-          images: [],
+          inviteMsg: '졸업선배<em> 초청 토크쇼</em>',
+          images: [
+            'img/어쩌다학교 (1).jpg',
+            'img/어쩌다학교 (2).jpg',
+            'img/어쩌다학교 (3).jpg',
+            'img/어쩌다학교 (4).jpg',
+            'img/어쩌다학교 (5).jpg',
+          ],
         },
         {
           key: 'union',
@@ -2299,9 +2346,11 @@
 
       galleryData.forEach((cat, i) => {
         const hasImg = cat.images.length > 0;
-        const thumb = hasImg
-          ? cat.images[0]
-          : 'https://picsum.photos/seed/dmd-' + cat.key + '/800/500';
+        const thumb =
+          cat.thumb ||
+          (hasImg
+            ? cat.images[0]
+            : 'https://picsum.photos/seed/dmd-' + cat.key + '/800/500');
 
         const delay = i % 2 === 0 ? ' delay-1' : ' delay-2';
         let el;
@@ -2328,14 +2377,30 @@
           el.type = 'button';
           el.dataset.cat = cat.key;
           el.className = 'g-item reveal' + delay;
-          el.innerHTML = `
-            <img src="${thumb}" alt="${cat.title}" loading="lazy" onerror="this.style.opacity=0.2;this.src='https://picsum.photos/seed/dmd-${cat.key}/800/500';" />
-            ${badge}
-            <figcaption class="cap">
-              <strong>${cat.title}</strong>
-              ${cat.subtitle}
-            </figcaption>
-          `;
+
+          if (cat.inviteMsg) {
+            // featured live card with invite-style layout (e.g., school-talk)
+            const metaCls =
+              'invite-meta' + (cat.subtitleLang === 'ko' ? ' is-ko' : '');
+            el.innerHTML = `
+              <img src="${thumb}" alt="${cat.title}" loading="lazy" onerror="this.style.opacity=0.2;this.src='https://picsum.photos/seed/dmd-${cat.key}/800/500';" />
+              ${badge}
+              <div class="invite">
+                <div class="${metaCls}">${cat.subtitle}</div>
+                <strong>${cat.title}</strong>
+                <div class="invite-msg">${cat.inviteMsg}</div>
+              </div>
+            `;
+          } else {
+            el.innerHTML = `
+              <img src="${thumb}" alt="${cat.title}" loading="lazy" onerror="this.style.opacity=0.2;this.src='https://picsum.photos/seed/dmd-${cat.key}/800/500';" />
+              ${badge}
+              <figcaption class="cap">
+                <strong>${cat.title}</strong>
+                ${cat.subtitle}
+              </figcaption>
+            `;
+          }
           el.addEventListener('click', () => openLightbox(cat));
         }
 
